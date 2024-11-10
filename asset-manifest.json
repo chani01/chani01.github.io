@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.d276d4c9.chunk.css",
-    "main.js": "/static/js/main.881e46d4.chunk.js",
-    "main.js.map": "/static/js/main.881e46d4.chunk.js.map",
+    "main.js": "/static/js/main.54ead884.chunk.js",
+    "main.js.map": "/static/js/main.54ead884.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.11e15922.js",
     "runtime-main.js.map": "/static/js/runtime-main.11e15922.js.map",
     "static/css/2.19627560.chunk.css": "/static/css/2.19627560.chunk.css",
-    "static/js/2.c66ec16d.chunk.js": "/static/js/2.c66ec16d.chunk.js",
-    "static/js/2.c66ec16d.chunk.js.map": "/static/js/2.c66ec16d.chunk.js.map",
+    "static/js/2.5a05f60b.chunk.js": "/static/js/2.5a05f60b.chunk.js",
+    "static/js/2.5a05f60b.chunk.js.map": "/static/js/2.5a05f60b.chunk.js.map",
     "static/js/3.a044e014.chunk.js": "/static/js/3.a044e014.chunk.js",
     "static/js/3.a044e014.chunk.js.map": "/static/js/3.a044e014.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.19627560.chunk.css.map": "/static/css/2.19627560.chunk.css.map",
     "static/css/main.d276d4c9.chunk.css.map": "/static/css/main.d276d4c9.chunk.css.map",
-    "static/js/2.c66ec16d.chunk.js.LICENSE.txt": "/static/js/2.c66ec16d.chunk.js.LICENSE.txt",
+    "static/js/2.5a05f60b.chunk.js.LICENSE.txt": "/static/js/2.5a05f60b.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/BestermindRegular.e58a1922.ttf",
     "static/media/achievement1.0bc701db.svg": "/static/media/achievement1.0bc701db.svg",
     "static/media/achievement2.3bd2a937.svg": "/static/media/achievement2.3bd2a937.svg",
@@ -173,8 +173,8 @@
   "entrypoints": [
     "static/js/runtime-main.11e15922.js",
     "static/css/2.19627560.chunk.css",
-    "static/js/2.c66ec16d.chunk.js",
+    "static/js/2.5a05f60b.chunk.js",
     "static/css/main.d276d4c9.chunk.css",
-    "static/js/main.881e46d4.chunk.js"
+    "static/js/main.54ead884.chunk.js"
   ]
 }
