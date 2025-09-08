@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.d276d4c9.chunk.css",
-    "main.js": "/static/js/main.45c6a961.chunk.js",
-    "main.js.map": "/static/js/main.45c6a961.chunk.js.map",
+    "main.js": "/static/js/main.4a80ec3f.chunk.js",
+    "main.js.map": "/static/js/main.4a80ec3f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.11e15922.js",
     "runtime-main.js.map": "/static/js/runtime-main.11e15922.js.map",
     "static/css/2.19627560.chunk.css": "/static/css/2.19627560.chunk.css",
@@ -138,7 +138,7 @@
     "static/media/postgresql.c0d71b7c.svg": "/static/media/postgresql.c0d71b7c.svg",
     "static/media/postman.87da8831.svg": "/static/media/postman.87da8831.svg",
     "static/media/premierepro.ee38e1aa.svg": "/static/media/premierepro.ee38e1aa.svg",
-    "static/media/profile2.d1b20a54.jpg": "/static/media/profile2.d1b20a54.jpg",
+    "static/media/profile3.21587bb2.jpg": "/static/media/profile3.21587bb2.jpg",
     "static/media/purpleTheme-boy.d30fe951.svg": "/static/media/purpleTheme-boy.d30fe951.svg",
     "static/media/purpleTheme-girl.56852c94.svg": "/static/media/purpleTheme-girl.56852c94.svg",
     "static/media/python.cf32ad96.svg": "/static/media/python.cf32ad96.svg",
@@ -178,6 +178,6 @@
     "static/css/2.19627560.chunk.css",
     "static/js/2.5a05f60b.chunk.js",
     "static/css/main.d276d4c9.chunk.css",
-    "static/js/main.45c6a961.chunk.js"
+    "static/js/main.4a80ec3f.chunk.js"
   ]
 }
