@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.d276d4c9.chunk.css",
-    "main.js": "/static/js/main.b2172b9b.chunk.js",
-    "main.js.map": "/static/js/main.b2172b9b.chunk.js.map",
+    "main.css": "/static/css/main.b64ffe7b.chunk.css",
+    "main.js": "/static/js/main.86317cee.chunk.js",
+    "main.js.map": "/static/js/main.86317cee.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.11e15922.js",
     "runtime-main.js.map": "/static/js/runtime-main.11e15922.js.map",
     "static/css/2.19627560.chunk.css": "/static/css/2.19627560.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.a044e014.chunk.js.map": "/static/js/3.a044e014.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.19627560.chunk.css.map": "/static/css/2.19627560.chunk.css.map",
-    "static/css/main.d276d4c9.chunk.css.map": "/static/css/main.d276d4c9.chunk.css.map",
+    "static/css/main.b64ffe7b.chunk.css.map": "/static/css/main.b64ffe7b.chunk.css.map",
     "static/js/2.5a05f60b.chunk.js.LICENSE.txt": "/static/js/2.5a05f60b.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/BestermindRegular.e58a1922.ttf",
     "static/media/achievement1.0bc701db.svg": "/static/media/achievement1.0bc701db.svg",
@@ -177,7 +177,7 @@
     "static/js/runtime-main.11e15922.js",
     "static/css/2.19627560.chunk.css",
     "static/js/2.5a05f60b.chunk.js",
-    "static/css/main.d276d4c9.chunk.css",
-    "static/js/main.b2172b9b.chunk.js"
+    "static/css/main.b64ffe7b.chunk.css",
+    "static/js/main.86317cee.chunk.js"
   ]
 }
