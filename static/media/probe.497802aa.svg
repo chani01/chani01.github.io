@@ -1,0 +1,52 @@
+<svg width="401" height="225" viewBox="0 0 401 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="401" height="225" rx="12" fill="#1a1a2e"/>
+
+  <!-- Terminal window frame -->
+  <rect x="50" y="30" width="301" height="165" rx="10" fill="#16213e" stroke="#0f3460" stroke-width="2"/>
+
+  <!-- Title bar -->
+  <rect x="50" y="30" width="301" height="28" rx="10" fill="#0f3460"/>
+  <rect x="50" y="48" width="301" height="10" fill="#0f3460"/>
+  <circle cx="70" cy="44" r="5" fill="#e94560"/>
+  <circle cx="86" cy="44" r="5" fill="#f5a623"/>
+  <circle cx="102" cy="44" r="5" fill="#7ec8e3"/>
+
+  <!-- Log lines -->
+  <!-- D/Probe line -->
+  <text x="70" y="82" font-family="monospace" font-size="11" fill="#7ec8e3">D/</text>
+  <text x="86" y="82" font-family="monospace" font-size="11" font-weight="bold" fill="#00d2ff">Probe</text>
+  <text x="124" y="82" font-family="monospace" font-size="11" fill="#8892b0">:</text>
+  <text x="132" y="82" font-family="monospace" font-size="11" fill="#64ffda">UserRepository</text>
+  <text x="226" y="82" font-family="monospace" font-size="11" fill="#ccd6f6">fetchData()</text>
+
+  <!-- I/Probe line -->
+  <text x="70" y="102" font-family="monospace" font-size="11" fill="#7ec8e3">I/</text>
+  <text x="86" y="102" font-family="monospace" font-size="11" font-weight="bold" fill="#00d2ff">Probe</text>
+  <text x="124" y="102" font-family="monospace" font-size="11" fill="#8892b0">:</text>
+  <text x="132" y="102" font-family="monospace" font-size="11" fill="#64ffda">Response</text>
+  <text x="196" y="102" font-family="monospace" font-size="11" fill="#a8b2d1">{ status: 200 }</text>
+
+  <!-- JSON formatted line -->
+  <text x="70" y="122" font-family="monospace" font-size="11" fill="#7ec8e3">V/</text>
+  <text x="86" y="122" font-family="monospace" font-size="11" font-weight="bold" fill="#00d2ff">Probe</text>
+  <text x="124" y="122" font-family="monospace" font-size="11" fill="#8892b0">:</text>
+  <text x="132" y="122" font-family="monospace" font-size="11" fill="#c792ea">{</text>
+  <text x="142" y="122" font-family="monospace" font-size="11" fill="#ffcb6b">"user"</text>
+  <text x="182" y="122" font-family="monospace" font-size="11" fill="#c792ea">:</text>
+  <text x="190" y="122" font-family="monospace" font-size="11" fill="#c3e88d">"park"</text>
+  <text x="226" y="122" font-family="monospace" font-size="11" fill="#c792ea">}</text>
+
+  <!-- Trace line -->
+  <text x="70" y="142" font-family="monospace" font-size="11" fill="#7ec8e3">W/</text>
+  <text x="86" y="142" font-family="monospace" font-size="11" font-weight="bold" fill="#f5a623">Probe</text>
+  <text x="124" y="142" font-family="monospace" font-size="11" fill="#8892b0">:</text>
+  <text x="132" y="142" font-family="monospace" font-size="11" fill="#ffcb6b">Cache expired</text>
+  <text x="228" y="142" font-family="monospace" font-size="11" fill="#a8b2d1">ttl=300s</text>
+
+  <!-- Cursor blink -->
+  <rect x="70" y="155" width="8" height="14" fill="#64ffda" opacity="0.7"/>
+
+  <!-- Magnifying glass icon (probe symbol) -->
+  <circle cx="340" cy="178" r="14" stroke="#00d2ff" stroke-width="3" fill="none"/>
+  <line x1="350" y1="188" x2="360" y2="198" stroke="#00d2ff" stroke-width="3" stroke-linecap="round"/>
+</svg>
