@@ -1,0 +1,181 @@
+# Probe
+
+An easy-to-use and powerful Android logging library with a fluent tag API.
+Probe helps you write clean, readable logs with support for trace logging,
+JSON formatting, and optional file persistence.
+
+---
+
+## 🌟 Features
+
+- **Simple API**: Minimal setup with intuitive method calls.
+- **Default Tag Support**: Set a global default tag for all logs.
+- **Fluent Tag API**: Chain custom tags using `tag()` for clean and readable logging.
+- **Log Levels**: Supports `DEBUG`, `INFO`, `WARN`, `ERROR`, and `TRACE`.
+- **JSON Logging**: Pretty-print JSON strings or objects for better readability.
+- **File Logging**: Optionally persist logs to a file for debugging.
+- **Flexible Logging Control**: Enable or disable logging dynamically using `isLoggingEnabled`.
+
+---
+
+## 🚀 Installation
+
+### 1. Add JitPack repository
+
+```gradle
+dependencyResolutionManagement {
+    repositories {
+        maven { url = uri("https://jitpack.io") }
+    }
+}
+```
+
+### 2. Add dependency
+```gradle
+dependencies {
+    implementation "com.github.chani01:Probe:<latest_version>"
+}
+```
+
+Sync your project after adding the dependency.
+
+---
+
+## 📖 Usage
+
+### Initialization
+
+Initialize `Probe` in your `Application` class or any entry point:
+
+```kotlin
+Probe.init(
+    tag = "MyAppTag",
+    isLoggingEnabled = BuildConfig.DEBUG,
+    logFile = null // optional
+)
+```
+
+#### Parameters
+- **`defaultTag`**: Default tag used when no custom tag is provided.
+- **`isLoggingEnabled`**: Enables or disables logging dynamically.
+- **`logFile`**: (Optional) File where logs will be written.  
+  If `null`, file logging is disabled.
+
+> **Note:** `init()` is designed to be called once. Subsequent calls are ignored and a warning is logged.
+
+---
+
+### Basic Logging
+
+```kotlin
+Probe.d("This is a debug message")
+Probe.i("This is an info message")
+Probe.w("This is a warning")
+Probe.e("This is an error message")
+Probe.t("This is a trace log")
+```
+
+---
+
+### Custom Tag Logging
+
+Use the fluent `tag()` API to override the default tag per log:
+
+```kotlin
+Probe.tag("MainActivity").d("Activity started")
+Probe.tag("Network").e("API request failed")
+```
+
+If no tag is specified, the default tag is used.
+
+---
+
+### Trace Logging
+
+Probe provides call stack–based trace logging.
+TRACE logs capture the execution path of your code by extracting
+user-level call stacks while filtering out framework and internal calls.
+
+This is especially useful for debugging complex flows
+and hard-to-reproduce issues.
+
+```kotlin
+Probe.t("Enter MainActivity")
+Probe.tag("Repository").t("Fetching data")
+```
+
+---
+
+### JSON Logging
+
+Probe supports logging JSON content in a readable, pretty-printed format.
+
+```kotlin
+val jsonString = """
+{
+  "id": 1,
+  "name": "Probe",
+  "enabled": true
+}
+"""
+
+Probe.json(jsonString)
+Probe.tag("API").json(jsonString, Log.WARN)
+```
+
+JSON output is automatically formatted for improved readability in Logcat.
+
+---
+
+### File Logging
+
+Probe writes logs using append mode.
+Logs persist across app restarts unless the file is manually cleared.
+File logging is recommended for debugging issues that cannot be reproduced locally.
+
+```kotlin
+Probe.init(
+    logFile = File(applicationContext.filesDir, "probe.txt")
+)
+```
+
+---
+
+## 🛠 Configuration Example
+
+```kotlin
+class MyApp : Application() {
+    override fun onCreate() {
+        super.onCreate()
+
+        Probe.init(
+            tag = "Probe",
+            isLoggingEnabled = BuildConfig.DEBUG,
+            logFile = null
+        )
+    }
+}
+```
+
+---
+
+## 🛡️ Logging in Release Builds
+
+For release builds, logging should be disabled for performance and security.
+
+- **Debug builds**: Logging enabled.
+- **Release builds**: Logging disabled by setting `isLoggingEnabled = false`.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙌 Contributions
+
+Contributions are welcome!
+Feel free to open issues, submit pull requests, or suggest improvements.
