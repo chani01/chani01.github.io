@@ -29,7 +29,7 @@
 ---
 
 ## 🛠 기술 스택
-`Java` `Firebase` `Swagger` `Git` `GitHub` `Slack` 
+`Java` `Firebase` `MVP` `Swagger` `Git` `GitHub` `Slack` 
 
 ---
 
