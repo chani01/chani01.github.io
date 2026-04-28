@@ -30,7 +30,7 @@
 
 ---
 
-## 🛠 기술 및 도구
+## 🛠 기술 스택
 `Kotlin` `Jetpack Compose` `MVVM` `Clean Architecture` `GraphQL` `AWS CloudFront` `Room` `Firebase App Distribution` `Claude Code` `Firebender` 
 
 ---

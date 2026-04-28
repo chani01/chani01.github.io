@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f48beb64.chunk.css",
-    "main.js": "/static/js/main.7bbb7670.chunk.js",
-    "main.js.map": "/static/js/main.7bbb7670.chunk.js.map",
+    "main.js": "/static/js/main.04e0f01f.chunk.js",
+    "main.js.map": "/static/js/main.04e0f01f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cfff1050.js",
     "runtime-main.js.map": "/static/js/runtime-main.cfff1050.js.map",
     "static/css/2.19627560.chunk.css": "/static/css/2.19627560.chunk.css",
@@ -47,6 +47,7 @@
     "static/media/c.77377419.svg": "/static/media/c.77377419.svg",
     "static/media/canva.b96f915b.svg": "/static/media/canva.b96f915b.svg",
     "static/media/capacitorjs.7517cfe2.svg": "/static/media/capacitorjs.7517cfe2.svg",
+    "static/media/claude_code.b068ec70.svg": "/static/media/claude_code.b068ec70.svg",
     "static/media/coffeescript.848d1c77.svg": "/static/media/coffeescript.848d1c77.svg",
     "static/media/contactsBlack.888fb542.svg": "/static/media/contactsBlack.888fb542.svg",
     "static/media/contactsBlue.e1eaa251.svg": "/static/media/contactsBlue.e1eaa251.svg",
@@ -176,6 +177,6 @@
     "static/css/2.19627560.chunk.css",
     "static/js/2.529ac890.chunk.js",
     "static/css/main.f48beb64.chunk.css",
-    "static/js/main.7bbb7670.chunk.js"
+    "static/js/main.04e0f01f.chunk.js"
   ]
 }
