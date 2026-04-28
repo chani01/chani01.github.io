@@ -9,7 +9,7 @@
 3. [기술 스택](#-기술-스택)
 4. [주요 기여](#-주요-기여)
 5. [스크린샷](#-스크린샷)
-5. [기여도 및 역할](#-기여도-및-역할)
+6. [역할](#-역할)
 
 ---
 
@@ -30,7 +30,7 @@
 ---
 
 ## 🛠 기술 스택
-`Java` `RemoteMonster SDK` `Firebase` `Swagger` `Git` `GitHub` `Slack` 
+`Java` `MVP` `RemoteMonster SDK` `Firebase` `Swagger` `Git` `GitHub` `Slack` 
 
 ---
 
