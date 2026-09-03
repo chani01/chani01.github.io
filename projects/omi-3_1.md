@@ -24,30 +24,46 @@
 ## 📈 핵심 성과
 | 지표 | 결과 |
 |------|------|
-| 보안 인프라 | **CloudFront Signed Cookie** 클라이언트 구현으로 콘텐츠 유출 방지 |
-| 사업 확장 | **대한체육회** 프로토타입 개발로 스포츠·건강 도메인 확장성 입증 |
-| 파트너십 | 인천 남동구 보건소 치매안심센터 협력 사업 **안정적 운영 지속** |
+| 미디어 보안 | 서버 발급 **CloudFront Signed Cookie**를 Android에 연동하여 미디어 접근 제어 구현 |
+| 프로토타입 | **대한체육회** 대상 프로토타입의 기능 정의 및 Android 개발 수행 |
+| 공공 협업 | **인천 남동구 보건소 치매안심센터** 협력 서비스의 Android 기능 개발 및 운영 지원 |
 
 ---
 
 ## 🛠 기술 스택
-`Kotlin` `Jetpack Compose` `MVVM` `Clean Architecture` `GraphQL` `AWS CloudFront` `Room` `Firebase App Distribution` `Claude Code` `Firebender` 
+**Android**  
+`Kotlin` `Jetpack Compose` `Room`
+
+**Architecture**  
+`MVVM` `Clean Architecture`
+
+**Network & Cloud**  
+`GraphQL` `AWS CloudFront`
+
+**Distribution**  
+`Firebase App Distribution`
+
+**AI Tools**  
+`Claude Code` `Firebender`
 
 ---
 
 ## 🚀 주요 기여
 
 ### 1. 운동 프로세스 전면 개편
-- 시니어 유저가 운동 수치를 직관적으로 확인·수행할 수 있도록 **전체 운동 프로세스 재설계**
-- Jetpack Compose 기반 동적 UI로 운동 시나리오 변화에 **즉각 대응 가능한 아키텍처** 구축
+- 시니어 사용자가 운동 수치와 진행 상태를 직관적으로 확인할 수 있도록 **운동 프로세스 및 UI 전면 개편**
+- Jetpack Compose 기반 동적 UI를 구현하여 **다양한 운동 시나리오와 상태 변화에 유연하게 대응**
+- 운동 진행 상태에 따른 화면 및 데이터 흐름을 구조화하여 유지보수성과 기능 확장성 개선
 
-### 2. CloudFront 미디어 보안 시스템 구축
-- **Signed Cookie Generator를 Android 클라이언트에 직접 구현**, 승인된 유저만 미디어 접근 가능하도록 보안 강화
-- 보안 정책 유지와 동시에 **끊김 없는 미디어 스트리밍** 데이터 핸들링 최적화
+### 2. CloudFront 기반 미디어 접근 제어
+- 서버에서 발급한 CloudFront Signed Cookie를 Android에서 전달받아 미디어 요청에 적용
+- 인증된 사용자만 미디어 콘텐츠에 접근할 수 있도록 Signed Cookie 기반 인증 처리 구현
+- 인증 정보를 유지·관리하며 안정적인 미디어 스트리밍 처리
 
 ### 3. 로컬 데이터 및 서버 통신 고도화
-- RoomDB 기반 재활·운동 기록 **로컬 데이터 관리 최적화**
-- GraphQL로 서버 통신 효율화 및 데이터 정합성 유지
+- Room DB를 활용해 재활·운동 기록을 로컬에서 관리하고 데이터 저장 및 조회 구조 개선
+- GraphQL 기반 API 연동을 통해 서비스에 필요한 데이터 조회·갱신 로직 구현
+- 로컬 데이터와 서버 데이터의 상태를 고려한 데이터 동기화 및 예외 처리
 
 ---
 
@@ -57,6 +73,6 @@
 ---
 
 ## 📊 역할
-- **Android 단독 개발자** | 기여도 100%
-- 운동 프로세스 개편·CloudFront 보안 연동 전담 + 대한체육회 프로토타입 기능 명세 참여 (기획 10%)
-- Claude Code · Firebender AI 활용으로 개발 생산성 향상
+- Android 개발자 | Android 개발 기여도 100%
+- 운동 프로세스 전면 개편 및 CloudFront Signed Cookie 기반 미디어 인증 연동
+- Claude Code · Firebender AI를 활용한 코드 작성·분석 및 개발 생산성 향상

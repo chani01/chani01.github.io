@@ -1,62 +1,97 @@
 # 👶 쑥쑥찰칵 2022 (BabyFolio 2022)
-> **2021 폭발적 성장 이후, 서비스 완성도와 수익 다변화를 이끈 고도화 프로젝트**<br>
-> 하루 20만 건 미디어 업로드 안정 처리 · NPS 90점 · Jetpack Compose 도입 주도
+
+> **아이의 성장 기록을 가족과 함께 공유하는 육아 플랫폼**<br>
+> Jetpack Compose 도입 · 홈 화면 개편 · 미디어 기능 고도화 · Android 메인 개발
 
 ---
 
 ## 🗂 목차
+
 1. [개요](#-개요)
 2. [핵심 성과](#-핵심-성과)
 3. [기술 스택](#-기술-스택)
 4. [주요 기여](#-주요-기여)
 5. [스크린샷](#-스크린샷)
-5. [역할](#-역할)
+6. [역할](#-역할)
 
 ---
 
 ## 📝 개요
-홈 화면 전면 개편(Jetpack Compose)·커머스 기능·인앱 마케팅 툴을 Android 메인 개발자(기여도 75%)로 주도, NPS 90점 및 DAU 지속 성장 달성
+
+아이의 성장 과정을 사진과 영상으로 기록하고
+가족 구성원과 함께 공유할 수 있는 **육아 성장 기록 서비스**입니다.
+
+**Android 메인 개발자**로 참여하여 Jetpack Compose를 도입하고
+홈 화면을 비롯한 주요 UI를 개편했습니다.
+
+서비스 성장에 따라 증가하는 미디어 데이터를 처리하기 위한
+검색·업로드 기능을 개선하고, 인앱 커뮤니케이션 도구인 쑥톡과
+굿즈 커머스 연동 등 신규 기능을 개발했습니다.
 
 ![서비스 커버](https://github.com/chani01/portfolio_info/blob/main/images/babyFolio/2022/babyfolio2022_cover.png)
 
 ---
 
 ## 📈 핵심 성과
-| 지표 | 결과 |
+
+| 구분 | 성과 |
 |------|------|
-| 일일 미디어 업로드 | **20만 건** 안정 처리 |
-| NPS | **90점** 달성 |
-| DAU / WAU | 지속 증가 |
-| 매출 | 굿즈 출시로 직접 매출 다변화 |
+| UI 기술 전환 | 기존 View 기반 화면에 **Jetpack Compose 도입 및 홈 화면 개편** |
+| 서비스 규모 | 일일 약 **20만 건의 미디어 업로드가 발생하는 서비스 개발·운영** |
+| 미디어 기능 | **검색·영상 업로드·중복 업로드 확인 기능 개발 및 개선** |
+| 서비스 확장 | 인앱 커뮤니케이션 **쑥톡 및 굿즈 커머스 기능 개발** |
 
 ---
 
 ## 🛠 기술 스택
-`Kotlin` `Java` `Jetpack Compose` `Coroutines` `Room` `Realm` `Firebase App Distribution` `Datadog`
+
+**Android**  
+`Kotlin` `Java` `Jetpack Compose` `Coroutines`
+
+**Database**  
+`Room` `Realm`
+
+**Monitoring**  
+`Datadog`
+
+**Distribution**  
+`Firebase App Distribution`
 
 ---
 
 ## 🚀 주요 기여
 
-### 1. Jetpack Compose 도입 및 홈 화면 전면 개편
-- 기존 View 기반에서 **Jetpack Compose로 전환**, 홈 화면 1·2차 개편 주도
-- 선언형 UI로 반응성·유지보수성 개선, 이후 신규 화면 개발 속도 향상
+### 1. Jetpack Compose 도입 및 홈 화면 개편
 
-### 2. 검색 및 업로드 고도화
-- 대량 미디어 대응 **키워드 검색 기능** 구현
-- 영상 업로드 시간 확장 및 **중복 업로드 체크** 로직으로 데이터 무결성 확보
+- 기존 View 기반 Android 프로젝트에 **Jetpack Compose 도입**
+- Compose를 활용하여 **홈 화면 1·2차 개편 개발**
+- 신규 UI를 **재사용 가능한 Compose 컴포넌트로 구성**
+- 기존 View 기반 화면과 Compose 화면을 함께 운영하며 **점진적인 UI 전환 진행**
 
-### 3. 인앱 마케팅 툴 '쑥톡' 개발
-- 마케팅 팀이 직접 유저와 소통할 수 있는 **인앱 커뮤니케이션 툴** 설계 및 구현
-- 외부 툴 의존 없이 내재화하여 마케팅 운영 효율 극대화
+### 2. 미디어 검색 및 업로드 기능 개선
 
-### 4. 굿즈 커머스 연동
-- 유저 기록을 실물 상품으로 연결하는 **굿즈 제작 플랫폼 연동** 구현
-- 신규 수익 채널 확보로 매출 다변화에 직접 기여
+- 누적된 사진·영상 콘텐츠를 찾을 수 있도록 **키워드 기반 검색 기능 개발**
+- 사용자 영상 업로드와 관련된 **업로드 기능 및 처리 로직 개선**
+- 동일한 미디어가 반복 등록되는 것을 방지하기 위한 **중복 업로드 확인 기능 구현**
+- 일일 대규모 미디어 업로드가 발생하는 환경에서 **관련 Android 기능 개발 및 운영**
+
+### 3. 인앱 커뮤니케이션 '쑥톡' 개발
+
+- 서비스 운영팀이 사용자에게 콘텐츠와 정보를 전달할 수 있는
+  **인앱 커뮤니케이션 기능 '쑥톡' 개발**
+- 쑥톡 메시지 조회 및 **Android UI 구현**
+- 서비스 내에서 운영 콘텐츠를 전달할 수 있도록 **관련 화면 및 데이터 처리 기능 개발**
+
+### 4. 굿즈 커머스 기능 연동
+
+- 사용자의 성장 기록을 활용한 **사진책 등 굿즈 관련 Android 기능 개발**
+- 상품 조회부터 제작·구매 과정에 필요한 **앱 화면 및 기능 연동**
+- 커머스 기능 추가에 따른 **사용자 흐름 및 UI 구현**
 
 ---
 
 ## 🖼 스크린샷
+
 <p align="center">
   <img src="https://github.com/chani01/portfolio_info/blob/main/images/babyFolio/2022/babyfolio_2022_1.jpg" width="13%">
   <img src="https://github.com/chani01/portfolio_info/blob/main/images/babyFolio/2022/babyfolio_2022_2.jpg" width="13%">
@@ -66,16 +101,23 @@
   <img src="https://github.com/chani01/portfolio_info/blob/main/images/babyFolio/2022/babyfolio_2022_6.jpg" width="13%">
   <img src="https://github.com/chani01/portfolio_info/blob/main/images/babyFolio/2022/babyfolio_2022_7.jpg" width="13%">
 </p>
+
 <p align="center">
   <img src="https://github.com/chani01/portfolio_info/blob/main/images/babyFolio/2022/babyfolio_2022_8.jpg" width="15%">
   <img src="https://github.com/chani01/portfolio_info/blob/main/images/babyFolio/2022/babyfolio_2022_9.jpg" width="15%">
   <img src="https://github.com/chani01/portfolio_info/blob/main/images/babyFolio/2022/babyfolio_2022_10.jpg" width="15%">
   <img src="https://github.com/chani01/portfolio_info/blob/main/images/babyFolio/2022/babyfolio_2022_11.jpg" width="15%">
   <img src="https://github.com/chani01/portfolio_info/blob/main/images/babyFolio/2022/babyfolio_2022_12.jpg" width="15%">
-  <img src="https://github.com/c
+</p>
 
 ---
 
 ## 📊 역할
-- **Android 메인 개발자** | 기여도 75%
-- Jetpack Compose 도입 주도, UI/UX 개편·커머스·마케팅 툴 전담 + 커머스 기획 참여
+
+- **Android 개발자 | Android 개발 기여도 75%**
+- 기존 Android 프로젝트에 **Jetpack Compose 도입**
+- Compose 기반 **홈 화면 및 주요 UI 개편**
+- 미디어 **검색·업로드 관련 기능 개발**
+- 인앱 커뮤니케이션 **쑥톡 개발**
+- 굿즈 커머스 관련 **Android 기능 개발**
+- 신규 기능의 **기능 정의 및 구현 방식 논의 참여**
