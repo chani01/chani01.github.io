@@ -1,6 +1,6 @@
 # 🌙 비춤 0.2 (Bechoom 0.2)
 > **인증 체계 강화 및 백엔드 인프라 전환을 통한 서비스 고도화**<br>
-> Firebase → Supabase 마이그레이션 · SNS 로그인 · 생체 인식 인증 · Android · Backend 단독 개발
+> Firebase → Supabase 마이그레이션 · SNS 로그인 · 생체 인식 인증 · AI 분석 운영 고도화 · Play Store · App Store 출시 · Android · Backend 단독 개발
 
 ---
 
@@ -37,6 +37,9 @@ Android Biometric API 기반 생체 인증을 구현하여
 | DB 설계 | 서비스 데이터 구조에 맞는 **PostgreSQL DB 스키마 직접 설계** |
 | 인증 | **Google · Kakao · Naver SNS 로그인** 및 세션 관리 구현 |
 | 보안 | Android **Biometric API 기반 생체 인증 기능 구현** |
+| AI 보안 | Supabase Edge Function 경유 호출로 **앱에 OpenAI API 키를 두지 않고 JWT 검증** |
+| 프롬프트 운영 | Remote Config로 **dev/prod 프롬프트를 앱 배포 없이 교체** |
+| 출시 | OpenAI 데이터 전송 고지 관련 **App Store 반려(5.1.1 / 5.1.2) 해결 후 Play Store · App Store 출시** |
 | 개발 범위 | **Android · Backend 단독 개발** |
 
 ---
@@ -50,7 +53,10 @@ Android Biometric API 기반 생체 인증을 구현하여
 `MVVM` `Clean Architecture`
 
 **Backend & Database**  
-`Supabase` `PostgreSQL` `Supabase Auth` `Supabase Storage`
+`Supabase` `PostgreSQL` `Supabase Auth` `Supabase Storage` `Supabase Edge Functions`
+
+**AI**  
+`OpenAI Responses API` `Firebase Remote Config` `WorkManager`
 
 **Authentication**  
 `Google Login` `Kakao Login` `Naver Login`
@@ -86,6 +92,14 @@ Android Biometric API 기반 생체 인증을 구현하여
 - 로그인된 사용자가 생체 인식을 통해 앱에 접근할 수 있는 **간편 인증 기능 개발**
 - 생체 인증 성공·실패 및 사용 가능 여부에 따른 **인증 상태 처리**
 - 꿈 기록 등 사용자 데이터 접근 전 **추가 인증 절차 구현**
+
+### 4. AI 분석 운영 고도화
+
+- **Supabase Edge Function**을 거쳐 OpenAI를 호출하도록 설계해 앱에 API 키를 두지 않고, 사용자 JWT 검증으로 보호
+- 심리학 논문을 참고해 프롬프트를 설계하고, **Remote Config로 dev/prod 프롬프트를 앱 배포 없이 교체**
+- OpenAI Responses API의 **JSON 구조화 응답**으로 감정 리포트 UI 구성
+- **WorkManager 기반 백그라운드 분석**, Room 저장 기반 재시도와 실패 히스토리 재요청, 입력 1,000자 제한
+- OpenAI 데이터 전송 고지 관련 **App Store 반려(5.1.1 / 5.1.2) 대응 및 해결**
 
 ---
 
